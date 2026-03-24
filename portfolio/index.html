@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dalibor Stanojlovic â Portfolio</title>
+  <title>Dalibor Stanojlovic — Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,7 +31,7 @@
       font-size: 16px;
     }
 
-    /* ââ NAV ââ */
+    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(10,10,15,0.85);
@@ -46,7 +46,7 @@
     .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--text); }
 
-    /* ââ HERO ââ */
+    /* ── HERO ── */
     .hero {
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
@@ -99,7 +99,7 @@
     .hero-stat .num { font-size: 2.2rem; font-weight: 800; color: var(--accent); }
     .hero-stat .lbl { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
-    /* ââ SECTIONS ââ */
+    /* ── SECTIONS ── */
     section { padding: 80px 2rem; max-width: 1160px; margin: 0 auto; }
     .section-label {
       display: inline-flex; align-items: center; gap: 8px;
@@ -110,7 +110,7 @@
     h2.section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 0.75rem; }
     .section-desc { color: var(--muted); max-width: 560px; margin-bottom: 3rem; }
 
-    /* ââ ABOUT ââ */
+    /* ── ABOUT ── */
     .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center; }
     @media(max-width:700px){ .about-grid { grid-template-columns: 1fr; } }
     .about-text p { color: var(--muted); margin-bottom: 1rem; }
@@ -123,7 +123,7 @@
     .stat-card .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
     .stat-card .label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
 
-    /* ââ SKILLS ââ */
+    /* ── SKILLS ── */
     .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; }
     .skill-tag {
       display: inline-flex; align-items: center; gap: 8px;
@@ -134,7 +134,7 @@
     .skill-tag:hover { border-color: var(--accent); color: var(--accent); }
     .skill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
-    /* ââ FILTER TABS ââ */
+    /* ── FILTER TABS ── */
     .filter-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 2rem; }
     .filter-tab {
       padding: 8px 18px; border-radius: 999px; border: 1.5px solid var(--border);
@@ -144,7 +144,7 @@
     .filter-tab:hover { border-color: var(--accent); color: var(--accent); }
     .filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-    /* ââ PROJECTS GRID ââ */
+    /* ── PROJECTS GRID ── */
     .projects-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem;
     }
@@ -201,7 +201,7 @@
     }
     .project-link:hover { gap: 10px; }
 
-    /* ââ CONTACT ââ */
+    /* ── CONTACT ── */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
     @media(max-width:700px){ .contact-grid { grid-template-columns: 1fr; } }
     .contact-info p { color: var(--muted); margin-bottom: 1.5rem; }
@@ -225,7 +225,7 @@
     .contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); }
     .contact-form textarea { resize: vertical; min-height: 130px; }
 
-    /* ââ FOOTER ââ */
+    /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
       text-align: center; padding: 2rem;
@@ -233,7 +233,7 @@
     }
     footer a { color: var(--accent); text-decoration: none; }
 
-    /* ââ SCROLL REVEAL ââ */
+    /* ── SCROLL REVEAL ── */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .project-card.hidden { display: none; }
@@ -262,12 +262,12 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-content">
-    <div class="hero-badge">â Available for new projects</div>
+    <div class="hero-badge">✅ Available for new projects</div>
     <h1>Hi, I'm <span class="name">Dalibor Stanojlovic</span></h1>
     <p class="hero-sub">Web developer &amp; automation engineer. I build custom websites and digital tools for businesses across Serbia, Croatia and Germany.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn btn-primary">View my work</a>
-      <a href="https://dtcreativesolutions.com" class="btn btn-outline" target="_blank">Business site â</a>
+      <a href="https://dtcreativesolutions.com" class="btn btn-outline" target="_blank">Business site →</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><div class="num">16+</div><div class="lbl">Websites Built</div></div>
@@ -286,11 +286,11 @@
     <div class="about-grid">
       <div class="about-text">
         <p>I'm an <strong>Electrical &amp; Computer Engineer</strong> with a strong passion for building web solutions that actually help businesses grow. I founded <strong>DT Creative Solutions</strong> to provide high-quality, custom websites and automation tools to clients across Serbia, Croatia and Germany.</p>
-        <p>My engineering background means I go beyond templates â I understand the technical side deeply and build things that are fast, reliable and maintainable. I've worked with clients in fitness, healthcare, real estate, events, hospitality and more.</p>
-        <p>I work with <strong>WordPress, JavaScript, Python, Supabase</strong> and custom HTML/CSS â picking the right tool for each job.</p>
+        <p>My engineering background means I go beyond templates — I understand the technical side deeply and build things that are fast, reliable and maintainable. I've worked with clients in fitness, healthcare, real estate, events, hospitality and more.</p>
+        <p>I work with <strong>WordPress, JavaScript, Python, Supabase</strong> and custom HTML/CSS — picking the right tool for each job.</p>
         <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="https://dtcreativesolutions.com" class="btn btn-primary" target="_blank" style="font-size:0.875rem;padding:10px 20px;">DT Creative Solutions â</a>
-          <a href="https://github.com/daliborbuca" class="btn btn-outline" target="_blank" style="font-size:0.875rem;padding:10px 20px;">GitHub â</a>
+          <a href="https://dtcreativesolutions.com" class="btn btn-primary" target="_blank" style="font-size:0.875rem;padding:10px 20px;">DT Creative Solutions →</a>
+          <a href="https://github.com/daliborbuca" class="btn btn-outline" target="_blank" style="font-size:0.875rem;padding:10px 20px;">GitHub →</a>
         </div>
       </div>
       <div class="about-stats">
@@ -333,7 +333,7 @@
   <div class="reveal">
     <span class="section-label">My Work</span>
     <h2 class="section-title">Client Projects</h2>
-    <p class="section-desc">Real websites built for real businesses â across industries and countries.</p>
+    <p class="section-desc">Real websites built for real businesses — across industries and countries.</p>
     <div class="filter-tabs">
       <button class="filter-tab active" onclick="filter('all', this)">All (16)</button>
       <button class="filter-tab" onclick="filter('business', this)">Business</button>
@@ -349,255 +349,255 @@
     <!-- made-solutions.com -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://made-solutions.com" target="_blank">
-        <span>ð¼</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>💼</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Business / Solutions</div>
         <h3>Made Solutions</h3>
         <p class="project-desc">Professional business solutions website. Clean corporate design with service showcase and lead generation.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Corporate</span></div>
-        <a class="project-link" href="https://made-solutions.com" target="_blank">made-solutions.com â</a>
+        <a class="project-link" href="https://made-solutions.com" target="_blank">made-solutions.com →</a>
       </div>
     </div>
 
     <!-- geofund.rs -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://geofund.rs" target="_blank">
-        <span>ð</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🍊</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Finance / Fund</div>
         <h3>GeoFund</h3>
         <p class="project-desc">Financial services website for a Serbian fund company. Professional trust-building design with clear service structure.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Finance</span></div>
-        <a class="project-link" href="https://geofund.rs" target="_blank">geofund.rs â</a>
+        <a class="project-link" href="https://geofund.rs" target="_blank">geofund.rs →</a>
       </div>
     </div>
 
     <!-- vasilijeautomobili.com -->
     <div class="project-card" data-cat="business ecommerce">
       <a class="project-preview" href="https://vasilijeautomobili.com" target="_blank">
-        <span>ð</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🚗</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Automotive</div>
         <h3>Vasilije Automobili</h3>
         <p class="project-desc">Car dealership website with vehicle catalog, filtering and inquiry forms. Full inventory display with detailed listings.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Catalog</span><span class="tag">Automotive</span></div>
-        <a class="project-link" href="https://vasilijeautomobili.com" target="_blank">vasilijeautomobili.com â</a>
+        <a class="project-link" href="https://vasilijeautomobili.com" target="_blank">vasilijeautomobili.com →</a>
       </div>
     </div>
 
     <!-- begemajstori.rs -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://begemajstori.rs" target="_blank">
-        <span>ð§</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🔧</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Services / Craftsmen</div>
         <h3>Bege Majstori</h3>
         <p class="project-desc">Service business website for craftsmen and home repair professionals. Built to generate local leads and showcase work.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Local Services</span></div>
-        <a class="project-link" href="https://begemajstori.rs" target="_blank">begemajstori.rs â</a>
+        <a class="project-link" href="https://begemajstori.rs" target="_blank">begemajstori.rs →</a>
       </div>
     </div>
 
     <!-- irl.rs -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://irl.rs" target="_blank">
-        <span>ð¢</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🏢</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Business</div>
         <h3>IRL</h3>
         <p class="project-desc">Corporate business website. Modern, minimal design focused on professional credibility and client conversion.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Corporate</span></div>
-        <a class="project-link" href="https://irl.rs" target="_blank">irl.rs â</a>
+        <a class="project-link" href="https://irl.rs" target="_blank">irl.rs →</a>
       </div>
     </div>
 
     <!-- macunmedzapotenciju.rs -->
     <div class="project-card" data-cat="health ecommerce">
       <a class="project-preview" href="https://macunmedzapotenciju.rs/prodavnica" target="_blank">
-        <span>ð</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🛒</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Health / E-commerce</div>
         <h3>Macun Med</h3>
         <p class="project-desc">Health product online store built with WooCommerce. Full e-commerce functionality with product listings, cart and checkout.</p>
         <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">E-commerce</span><span class="tag">Health</span></div>
-        <a class="project-link" href="https://macunmedzapotenciju.rs/prodavnica" target="_blank">macunmedzapotenciju.rs â</a>
+        <a class="project-link" href="https://macunmedzapotenciju.rs/prodavnica" target="_blank">macunmedzapotenciju.rs →</a>
       </div>
     </div>
 
     <!-- prizmapr.rs -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://prizmapr.rs" target="_blank">
-        <span>ð£</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>📣</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">PR / Marketing Agency</div>
         <h3>Prizma PR</h3>
         <p class="project-desc">PR and communications agency website. Creative, brand-forward design to showcase agency portfolio and attract clients.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Agency</span><span class="tag">PR</span></div>
-        <a class="project-link" href="https://prizmapr.rs" target="_blank">prizmapr.rs â</a>
+        <a class="project-link" href="https://prizmapr.rs" target="_blank">prizmapr.rs →</a>
       </div>
     </div>
 
     <!-- najammasinezadubinsko.rs -->
     <div class="project-card" data-cat="business ecommerce">
       <a class="project-preview" href="https://najammasinezadubinsko.rs" target="_blank">
-        <span>ð§¹</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🧹</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Rental / Services</div>
-        <h3>Najam MaÅ¡ine za Dubinsko</h3>
+        <h3>Najam Mašine za Dubinsko</h3>
         <p class="project-desc">Machine rental website for deep-cleaning equipment. Service listings, pricing and booking-focused layout.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Rental</span><span class="tag">Services</span></div>
-        <a class="project-link" href="https://najammasinezadubinsko.rs" target="_blank">najammasinezadubinsko.rs â</a>
+        <a class="project-link" href="https://najammasinezadubinsko.rs" target="_blank">najammasinezadubinsko.rs →</a>
       </div>
     </div>
 
     <!-- vestackodrvecealberodekor.rs -->
     <div class="project-card" data-cat="business ecommerce">
       <a class="project-preview" href="https://vestackodrvecealberodekor.rs" target="_blank">
-        <span>ð¿</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🌿</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Decor / E-commerce</div>
         <h3>Albero Dekor</h3>
         <p class="project-desc">Online store for artificial trees and decorative plants. Product catalog with categories, filtering and e-commerce checkout.</p>
         <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">E-commerce</span><span class="tag">Decor</span></div>
-        <a class="project-link" href="https://vestackodrvecealberodekor.rs" target="_blank">vestackodrvecealberodekor.rs â</a>
+        <a class="project-link" href="https://vestackodrvecealberodekor.rs" target="_blank">vestackodrvecealberodekor.rs →</a>
       </div>
     </div>
 
     <!-- bmpm-bau.de -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://bmpm-bau.de" target="_blank">
-        <span>ðï¸</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🏗️</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
-        <div class="project-cat">Construction Â· Germany ð©ðª</div>
+        <div class="project-cat">Construction · Germany 🇩🇪</div>
         <h3>BMPM Bau</h3>
         <p class="project-desc">Construction company website for a German client. Professional trade site with project gallery, services and contact. Bilingual design.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Construction</span><span class="tag">Germany</span></div>
-        <a class="project-link" href="https://bmpm-bau.de" target="_blank">bmpm-bau.de â</a>
+        <a class="project-link" href="https://bmpm-bau.de" target="_blank">bmpm-bau.de →</a>
       </div>
     </div>
 
     <!-- alextherapy.rs -->
     <div class="project-card" data-cat="health">
       <a class="project-preview" href="https://alextherapy.rs" target="_blank">
-        <span>ð§</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🧘</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Health / Therapy</div>
         <h3>Alex Therapy</h3>
         <p class="project-desc">Therapy and wellness practitioner website. Calm, trust-focused design with service descriptions and appointment booking.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Health</span><span class="tag">Therapy</span></div>
-        <a class="project-link" href="https://alextherapy.rs" target="_blank">alextherapy.rs â</a>
+        <a class="project-link" href="https://alextherapy.rs" target="_blank">alextherapy.rs →</a>
       </div>
     </div>
 
     <!-- aparatura-lab.com -->
     <div class="project-card" data-cat="business">
       <a class="project-preview" href="https://aparatura-lab.com/en/home" target="_blank">
-        <span>ð¬</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🔬</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Laboratory / Medical</div>
         <h3>Aparatura Lab</h3>
         <p class="project-desc">Laboratory equipment website with multilingual support (EN/SR). Technical product showcase with professional B2B presentation.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Multilingual</span><span class="tag">Lab</span></div>
-        <a class="project-link" href="https://aparatura-lab.com/en/home" target="_blank">aparatura-lab.com â</a>
+        <a class="project-link" href="https://aparatura-lab.com/en/home" target="_blank">aparatura-lab.com →</a>
       </div>
     </div>
 
     <!-- taopatch-srbija.com -->
     <div class="project-card" data-cat="health ecommerce">
       <a class="project-preview" href="https://taopatch-srbija.com" target="_blank">
-        <span>ð©¹</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🩹</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Health / E-commerce</div>
         <h3>Tao Patch Serbia</h3>
         <p class="project-desc">Health technology product store for the Serbian market. E-commerce site with product education, testimonials and online sales.</p>
         <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">Health Tech</span><span class="tag">E-commerce</span></div>
-        <a class="project-link" href="https://taopatch-srbija.com" target="_blank">taopatch-srbija.com â</a>
+        <a class="project-link" href="https://taopatch-srbija.com" target="_blank">taopatch-srbija.com →</a>
       </div>
     </div>
 
     <!-- powerhousegym.rs -->
     <div class="project-card" data-cat="health">
       <a class="project-preview" href="https://powerhousegym.rs" target="_blank">
-        <span>ðª</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>💪</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Fitness / Gym</div>
         <h3>Powerhouse Gym</h3>
         <p class="project-desc">Gym and fitness centre website. Bold, energetic design with membership plans, schedule, trainers and facility showcase.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Gym</span></div>
-        <a class="project-link" href="https://powerhousegym.rs" target="_blank">powerhousegym.rs â</a>
+        <a class="project-link" href="https://powerhousegym.rs" target="_blank">powerhousegym.rs →</a>
       </div>
     </div>
 
     <!-- vsfitness.online -->
     <div class="project-card" data-cat="health">
       <a class="project-preview" href="https://vsfitness.online" target="_blank">
-        <span>ðï¸</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>🏋️</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
         <div class="project-cat">Fitness / Online Coaching</div>
         <h3>VS Fitness</h3>
         <p class="project-desc">Online fitness coaching website. Programme showcase, trainer profile, transformation gallery and membership/contact section.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Online</span></div>
-        <a class="project-link" href="https://vsfitness.online" target="_blank">vsfitness.online â</a>
+        <a class="project-link" href="https://vsfitness.online" target="_blank">vsfitness.online →</a>
       </div>
     </div>
 
     <!-- sibenikdancefestival.com -->
     <div class="project-card" data-cat="events">
       <a class="project-preview" href="https://sibenikdancefestival.com" target="_blank">
-        <span>ð</span>
-        <div class="preview-overlay"><span>Visit site â</span></div>
+        <span>💃</span>
+        <div class="preview-overlay"><span>Visit site →</span></div>
       </a>
       <div class="project-body">
-        <div class="project-cat">Events / Festival Â· Croatia ð­ð·</div>
-        <h3>Å ibenik Dance Festival</h3>
+        <div class="project-cat">Events / Festival · Croatia 🇭🇷</div>
+        <h3>Šibenik Dance Festival</h3>
         <p class="project-desc">Dance festival website for a Croatian international event. Dynamic design with programme, performers, tickets and gallery.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Events</span><span class="tag">Croatia</span></div>
-        <a class="project-link" href="https://sibenikdancefestival.com" target="_blank">sibenikdancefestival.com â</a>
+        <a class="project-link" href="https://sibenikdancefestival.com" target="_blank">sibenikdancefestival.com →</a>
       </div>
     </div>
 
     <!-- Fleet Management App -->
     <div class="project-card" data-cat="dev">
       <a class="project-preview" href="https://github.com/daliborbuca/fleet-management-app" target="_blank">
-        <span>ð</span>
-        <div class="preview-overlay"><span>View on GitHub â</span></div>
+        <span>🚗</span>
+        <div class="preview-overlay"><span>View on GitHub →</span></div>
       </a>
       <div class="project-body">
-        <div class="project-cat">Dev Project Â· Bachelor Thesis</div>
+        <div class="project-cat">Dev Project · Bachelor Thesis</div>
         <h3>Fleet Management App</h3>
         <p class="project-desc">Full-stack web app replacing Excel-based fleet tracking. Supabase backend, role-based auth for Admins/Drivers, automated mileage logging and real-time alerts.</p>
         <div class="project-tags"><span class="tag">Supabase</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">RLS Auth</span></div>
-        <a class="project-link" href="https://github.com/daliborbuca/fleet-management-app" target="_blank">GitHub â</a>
+        <a class="project-link" href="https://github.com/daliborbuca/fleet-management-app" target="_blank">GitHub →</a>
       </div>
     </div>
 
@@ -614,19 +614,19 @@
         <p>Have a project in mind? Looking for a developer who understands both the engineering and the business side? I'd love to hear from you.</p>
         <div class="contact-links">
           <a class="contact-link" href="mailto:dalibor.stanojlovic@outlook.com">
-            <span class="icon">ð§</span>
+            <span class="icon">📧</span>
             <div><div class="link-label">Email</div><div class="link-val">dalibor.stanojlovic@outlook.com</div></div>
           </a>
           <a class="contact-link" href="https://dtcreativesolutions.com" target="_blank">
-            <span class="icon">ð</span>
+            <span class="icon">🌐</span>
             <div><div class="link-label">Business</div><div class="link-val">dtcreativesolutions.com</div></div>
           </a>
           <a class="contact-link" href="https://www.linkedin.com/in/dalibor-stanojlovic-0438a7133" target="_blank">
-            <span class="icon">ð¼</span>
+            <span class="icon">💼</span>
             <div><div class="link-label">LinkedIn</div><div class="link-val">Dalibor Stanojlovic</div></div>
           </a>
           <a class="contact-link" href="https://github.com/daliborbuca" target="_blank">
-            <span class="icon">ð»</span>
+            <span class="icon">💻</span>
             <div><div class="link-label">GitHub</div><div class="link-val">@daliborbuca</div></div>
           </a>
         </div>
@@ -637,7 +637,7 @@
           <input type="email" placeholder="Your email" required />
           <input type="text" placeholder="Subject" />
           <textarea placeholder="Tell me about your project..."></textarea>
-          <button type="submit" class="btn btn-primary" style="justify-content:center;">Send message â</button>
+          <button type="submit" class="btn btn-primary" style="justify-content:center;">Send message →</button>
         </form>
       </div>
     </div>
@@ -645,7 +645,7 @@
 </section>
 
 <footer>
-  <p>Built by <a href="https://github.com/daliborbuca">Dalibor Stanojlovic</a> Â· <a href="https://dtcreativesolutions.com">DT Creative Solutions</a> Â· Â© 2025</p>
+  <p>Built by <a href="https://github.com/daliborbuca">Dalibor Stanojlovic</a> · <a href="https://dtcreativesolutions.com">DT Creative Solutions</a> · © 2025</p>
 </footer>
 
 <script>
@@ -673,9 +673,9 @@
   function handleForm(e) {
     e.preventDefault();
     const btn = e.target.querySelector('button');
-    btn.textContent = 'â Message sent!';
+    btn.textContent = '✓ Message sent!';
     btn.style.background = '#43e97b'; btn.style.color = '#000';
-    setTimeout(() => { btn.textContent = 'Send message â'; btn.style.background = ''; btn.style.color = ''; }, 3000);
+    setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; btn.style.color = ''; }, 3000);
   }
 
   // Active nav
