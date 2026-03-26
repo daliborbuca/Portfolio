@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dalibor Stanojlovic — Portfolio</title>
+  <title>Dalibor Stanojlovic — Web Developer &amp; Automation Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -201,6 +201,35 @@
     }
     .project-link:hover { gap: 10px; }
 
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;
+    }
+    .testimonial-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.75rem;
+      position: relative; transition: border-color 0.2s;
+    }
+    .testimonial-card:hover { border-color: rgba(108,99,255,0.4); }
+    .testimonial-quote {
+      font-size: 2.5rem; line-height: 1; color: var(--accent);
+      margin-bottom: 0.75rem; opacity: 0.6;
+    }
+    .testimonial-text {
+      color: var(--muted); font-size: 0.925rem; line-height: 1.7;
+      margin-bottom: 1.25rem; font-style: italic;
+    }
+    .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+    .testimonial-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--surface2); border: 2px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .testimonial-name { font-weight: 700; font-size: 0.9rem; }
+    .testimonial-role { font-size: 0.78rem; color: var(--muted); }
+    .testimonial-stars { color: #fbbf24; font-size: 0.8rem; margin-top: 2px; letter-spacing: 1px; }
+
     /* ── CONTACT ── */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
     @media(max-width:700px){ .contact-grid { grid-template-columns: 1fr; } }
@@ -253,6 +282,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Work</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="btn btn-primary" href="#contact" style="padding:8px 20px;font-size:0.85rem;">Hire me</a>
@@ -263,13 +293,13 @@
   <div class="hero-content">
     <div class="hero-badge">✅ Available for new projects</div>
     <h1>Hi, I'm <span class="name">Dalibor Stanojlovic</span></h1>
-    <p class="hero-sub">Web developer &amp; automation engineer. I build custom websites and digital tools for businesses across Serbia, Croatia and Germany.</p>
+    <p class="hero-sub">I build custom websites that actually convert — for businesses in Serbia, Croatia and Germany. Engineering precision, zero cookie-cutter templates.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn btn-primary">View my work</a>
       <a href="https://dtcreativesolutions.com" class="btn btn-outline" target="_blank">Business site →</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="num">16+</div><div class="lbl">Websites Built</div></div>
+      <div class="hero-stat"><div class="num">10+</div><div class="lbl">Websites Live</div></div>
       <div class="hero-stat"><div class="num">3</div><div class="lbl">Countries</div></div>
       <div class="hero-stat"><div class="num">5+</div><div class="lbl">Industries</div></div>
       <div class="hero-stat"><div class="num">5+</div><div class="lbl">Years Experience</div></div>
@@ -281,22 +311,22 @@
 <section id="about">
   <div class="reveal">
     <span class="section-label">About me</span>
-    <h2 class="section-title">Engineer turned Web Developer</h2>
+    <h2 class="section-title">Technical Precision Meets Web Design</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm an <strong>Electrical &amp; Computer Engineer</strong> with a strong passion for building web solutions that actually help businesses grow. I founded <strong>DT Creative Solutions</strong> to provide high-quality, custom websites and automation tools to clients across Serbia, Croatia and Germany.</p>
-        <p>My engineering background means I go beyond templates — I understand the technical side deeply and build things that are fast, reliable and maintainable. I've worked with clients in fitness, healthcare, real estate, events, hospitality and more.</p>
-        <p>I work with <strong>WordPress, JavaScript, Python, Supabase</strong> and custom HTML/CSS — picking the right tool for each job.</p>
+        <p>I'm an <strong>Electrical &amp; Computer Engineer</strong> who builds websites that go beyond templates. I founded <strong>DT Creative Solutions</strong> to deliver custom, high-performance web solutions to businesses across the Balkans and Germany.</p>
+        <p>Most developers use pre-built themes and call it a day. My engineering background means I understand performance, architecture and maintainability at a deeper level — so you get a site that's fast, reliable and built to last.</p>
+        <p>I work across <strong>fitness, healthcare, automotive, events, finance</strong> and more — always picking the right stack for the job: WordPress, WooCommerce, JavaScript, Python or Supabase.</p>
         <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
           <a href="https://dtcreativesolutions.com" class="btn btn-primary" target="_blank" style="font-size:0.875rem;padding:10px 20px;">DT Creative Solutions →</a>
           <a href="https://github.com/daliborbuca" class="btn btn-outline" target="_blank" style="font-size:0.875rem;padding:10px 20px;">GitHub →</a>
         </div>
       </div>
       <div class="about-stats">
-        <div class="stat-card"><div class="num">16+</div><div class="label">Client Websites</div></div>
-        <div class="stat-card"><div class="num">3</div><div class="label">Countries</div></div>
+        <div class="stat-card"><div class="num">100%</div><div class="label">Custom Built</div></div>
+        <div class="stat-card"><div class="num">48h</div><div class="label">Avg. Response Time</div></div>
+        <div class="stat-card"><div class="num">2020</div><div class="label">Agency Founded</div></div>
         <div class="stat-card"><div class="num">18+</div><div class="label">GitHub Projects</div></div>
-        <div class="stat-card"><div class="num">1</div><div class="label">Thesis App (Supabase)</div></div>
       </div>
     </div>
   </div>
@@ -331,10 +361,10 @@
 <section id="projects">
   <div class="reveal">
     <span class="section-label">My Work</span>
-    <h2 class="section-title">Client Projects</h2>
-    <p class="section-desc">Real websites built for real businesses — across industries and countries.</p>
+    <h2 class="section-title">Selected Projects</h2>
+    <p class="section-desc">10 of my best client websites — across industries, countries and tech stacks.</p>
     <div class="filter-tabs">
-      <button class="filter-tab active" onclick="filter('all', this)">All (16)</button>
+      <button class="filter-tab active" onclick="filter('all', this)">All (10)</button>
       <button class="filter-tab" onclick="filter('business', this)">Business</button>
       <button class="filter-tab" onclick="filter('health', this)">Health &amp; Fitness</button>
       <button class="filter-tab" onclick="filter('ecommerce', this)">E-commerce</button>
@@ -345,36 +375,6 @@
 
   <div class="projects-grid reveal" id="projects-grid">
 
-    <!-- made-solutions.com -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://made-solutions.com" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://made-solutions.com" alt="made-solutions.com preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Business / Solutions</div>
-        <h3>Made Solutions</h3>
-        <p class="project-desc">Professional business solutions website. Clean corporate design with service showcase and lead generation.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Corporate</span></div>
-        <a class="project-link" href="https://made-solutions.com" target="_blank">made-solutions.com →</a>
-      </div>
-    </div>
-
-    <!-- geofund.rs -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://geofund.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://geofund.rs" alt="geofund.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Finance / Fund</div>
-        <h3>GeoFund</h3>
-        <p class="project-desc">Financial services website for a Serbian fund company. Professional trust-building design with clear service structure.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Finance</span></div>
-        <a class="project-link" href="https://geofund.rs" target="_blank">geofund.rs →</a>
-      </div>
-    </div>
-
     <!-- vasilijeautomobili.com -->
     <div class="project-card" data-cat="business ecommerce">
       <a class="project-preview" href="https://vasilijeautomobili.com" target="_blank">
@@ -384,99 +384,9 @@
       <div class="project-body">
         <div class="project-cat">Automotive</div>
         <h3>Vasilije Automobili</h3>
-        <p class="project-desc">Car dealership website with vehicle catalog, filtering and inquiry forms. Full inventory display with detailed listings.</p>
+        <p class="project-desc">Car dealership website with full vehicle catalog, advanced filtering and inquiry forms. Complete inventory management with detailed listings.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Catalog</span><span class="tag">Automotive</span></div>
         <a class="project-link" href="https://vasilijeautomobili.com" target="_blank">vasilijeautomobili.com →</a>
-      </div>
-    </div>
-
-    <!-- begemajstori.rs -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://begemajstori.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://begemajstori.rs" alt="begemajstori.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Services / Craftsmen</div>
-        <h3>Bege Majstori</h3>
-        <p class="project-desc">Service business website for craftsmen and home repair professionals. Built to generate local leads and showcase work.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Local Services</span></div>
-        <a class="project-link" href="https://begemajstori.rs" target="_blank">begemajstori.rs →</a>
-      </div>
-    </div>
-
-    <!-- irl.rs -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://irl.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://irl.rs" alt="irl.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Business</div>
-        <h3>IRL</h3>
-        <p class="project-desc">Corporate business website. Modern, minimal design focused on professional credibility and client conversion.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Corporate</span></div>
-        <a class="project-link" href="https://irl.rs" target="_blank">irl.rs →</a>
-      </div>
-    </div>
-
-    <!-- macunmedzapotenciju.rs -->
-    <div class="project-card" data-cat="health ecommerce">
-      <a class="project-preview" href="https://macunmedzapotenciju.rs/prodavnica" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://macunmedzapotenciju.rs/prodavnica" alt="macunmedzapotenciju.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Health / E-commerce</div>
-        <h3>Macun Med</h3>
-        <p class="project-desc">Health product online store built with WooCommerce. Full e-commerce functionality with product listings, cart and checkout.</p>
-        <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">E-commerce</span><span class="tag">Health</span></div>
-        <a class="project-link" href="https://macunmedzapotenciju.rs/prodavnica" target="_blank">macunmedzapotenciju.rs →</a>
-      </div>
-    </div>
-
-    <!-- prizmapr.rs -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://prizmapr.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://prizmapr.rs" alt="prizmapr.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">PR / Marketing Agency</div>
-        <h3>Prizma PR</h3>
-        <p class="project-desc">PR and communications agency website. Creative, brand-forward design to showcase agency portfolio and attract clients.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Agency</span><span class="tag">PR</span></div>
-        <a class="project-link" href="https://prizmapr.rs" target="_blank">prizmapr.rs →</a>
-      </div>
-    </div>
-
-    <!-- najammasinezadubinsko.rs -->
-    <div class="project-card" data-cat="business ecommerce">
-      <a class="project-preview" href="https://najammasinezadubinsko.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://najammasinezadubinsko.rs" alt="najammasinezadubinsko.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Rental / Services</div>
-        <h3>Najam Mašine za Dubinsko</h3>
-        <p class="project-desc">Machine rental website for deep-cleaning equipment. Service listings, pricing and booking-focused layout.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Rental</span><span class="tag">Services</span></div>
-        <a class="project-link" href="https://najammasinezadubinsko.rs" target="_blank">najammasinezadubinsko.rs →</a>
-      </div>
-    </div>
-
-    <!-- vestackodrvecealberodekor.rs -->
-    <div class="project-card" data-cat="business ecommerce">
-      <a class="project-preview" href="https://vestackodrvecealberodekor.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://vestackodrvecealberodekor.rs" alt="vestackodrvecealberodekor.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Decor / E-commerce</div>
-        <h3>Albero Dekor</h3>
-        <p class="project-desc">Online store for artificial trees and decorative plants. Product catalog with categories, filtering and e-commerce checkout.</p>
-        <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">E-commerce</span><span class="tag">Decor</span></div>
-        <a class="project-link" href="https://vestackodrvecealberodekor.rs" target="_blank">vestackodrvecealberodekor.rs →</a>
       </div>
     </div>
 
@@ -489,84 +399,9 @@
       <div class="project-body">
         <div class="project-cat">Construction · Germany 🇩🇪</div>
         <h3>BMPM Bau</h3>
-        <p class="project-desc">Construction company website for a German client. Professional trade site with project gallery, services and contact. Bilingual design.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Construction</span><span class="tag">Germany</span></div>
+        <p class="project-desc">Construction company website for a German client. Bilingual (DE/SR) design with project gallery, services and contact — built for a foreign market.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Bilingual</span><span class="tag">Germany</span></div>
         <a class="project-link" href="https://bmpm-bau.de" target="_blank">bmpm-bau.de →</a>
-      </div>
-    </div>
-
-    <!-- alextherapy.rs -->
-    <div class="project-card" data-cat="health">
-      <a class="project-preview" href="https://alextherapy.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://alextherapy.rs" alt="alextherapy.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Health / Therapy</div>
-        <h3>Alex Therapy</h3>
-        <p class="project-desc">Therapy and wellness practitioner website. Calm, trust-focused design with service descriptions and appointment booking.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Health</span><span class="tag">Therapy</span></div>
-        <a class="project-link" href="https://alextherapy.rs" target="_blank">alextherapy.rs →</a>
-      </div>
-    </div>
-
-    <!-- aparatura-lab.com -->
-    <div class="project-card" data-cat="business">
-      <a class="project-preview" href="https://aparatura-lab.com/en/home" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://aparatura-lab.com/en/home" alt="aparatura-lab.com preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Laboratory / Medical</div>
-        <h3>Aparatura Lab</h3>
-        <p class="project-desc">Laboratory equipment website with multilingual support (EN/SR). Technical product showcase with professional B2B presentation.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Multilingual</span><span class="tag">Lab</span></div>
-        <a class="project-link" href="https://aparatura-lab.com/en/home" target="_blank">aparatura-lab.com →</a>
-      </div>
-    </div>
-
-    <!-- taopatch-srbija.com -->
-    <div class="project-card" data-cat="health ecommerce">
-      <a class="project-preview" href="https://taopatch-srbija.com" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://taopatch-srbija.com" alt="taopatch-srbija.com preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Health / E-commerce</div>
-        <h3>Tao Patch Serbia</h3>
-        <p class="project-desc">Health technology product store for the Serbian market. E-commerce site with product education, testimonials and online sales.</p>
-        <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">Health Tech</span><span class="tag">E-commerce</span></div>
-        <a class="project-link" href="https://taopatch-srbija.com" target="_blank">taopatch-srbija.com →</a>
-      </div>
-    </div>
-
-    <!-- powerhousegym.rs -->
-    <div class="project-card" data-cat="health">
-      <a class="project-preview" href="https://powerhousegym.rs" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://powerhousegym.rs" alt="powerhousegym.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Fitness / Gym</div>
-        <h3>Powerhouse Gym</h3>
-        <p class="project-desc">Gym and fitness centre website. Bold, energetic design with membership plans, schedule, trainers and facility showcase.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Gym</span></div>
-        <a class="project-link" href="https://powerhousegym.rs" target="_blank">powerhousegym.rs →</a>
-      </div>
-    </div>
-
-    <!-- vsfitness.online -->
-    <div class="project-card" data-cat="health">
-      <a class="project-preview" href="https://vsfitness.online" target="_blank">
-        <img src="https://image.thum.io/get/width/600/https://vsfitness.online" alt="vsfitness.online preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
-        <div class="preview-overlay"><span>Visit site →</span></div>
-      </a>
-      <div class="project-body">
-        <div class="project-cat">Fitness / Online Coaching</div>
-        <h3>VS Fitness</h3>
-        <p class="project-desc">Online fitness coaching website. Programme showcase, trainer profile, transformation gallery and membership/contact section.</p>
-        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Online</span></div>
-        <a class="project-link" href="https://vsfitness.online" target="_blank">vsfitness.online →</a>
       </div>
     </div>
 
@@ -579,15 +414,105 @@
       <div class="project-body">
         <div class="project-cat">Events / Festival · Croatia 🇭🇷</div>
         <h3>Šibenik Dance Festival</h3>
-        <p class="project-desc">Dance festival website for a Croatian international event. Dynamic design with programme, performers, tickets and gallery.</p>
+        <p class="project-desc">International dance festival website for a Croatian event. Dynamic design with programme, performers, tickets and photo gallery.</p>
         <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Events</span><span class="tag">Croatia</span></div>
         <a class="project-link" href="https://sibenikdancefestival.com" target="_blank">sibenikdancefestival.com →</a>
       </div>
     </div>
 
+    <!-- aparatura-lab.com -->
+    <div class="project-card" data-cat="business">
+      <a class="project-preview" href="https://aparatura-lab.com/en/home" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://aparatura-lab.com/en/home" alt="aparatura-lab.com preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">Laboratory / Medical B2B</div>
+        <h3>Aparatura Lab</h3>
+        <p class="project-desc">Laboratory equipment website with full multilingual support (EN/SR). Technical product showcase designed for professional B2B clients.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Multilingual</span><span class="tag">B2B</span></div>
+        <a class="project-link" href="https://aparatura-lab.com/en/home" target="_blank">aparatura-lab.com →</a>
+      </div>
+    </div>
+
+    <!-- prizmapr.rs -->
+    <div class="project-card" data-cat="business">
+      <a class="project-preview" href="https://prizmapr.rs" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://prizmapr.rs" alt="prizmapr.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">PR / Marketing Agency</div>
+        <h3>Prizma PR</h3>
+        <p class="project-desc">PR and communications agency website. Creative, brand-forward design to showcase agency portfolio and attract high-value clients.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Agency</span><span class="tag">PR</span></div>
+        <a class="project-link" href="https://prizmapr.rs" target="_blank">prizmapr.rs →</a>
+      </div>
+    </div>
+
+    <!-- geofund.rs -->
+    <div class="project-card" data-cat="business">
+      <a class="project-preview" href="https://geofund.rs" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://geofund.rs" alt="geofund.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">Finance / Fund</div>
+        <h3>GeoFund</h3>
+        <p class="project-desc">Financial services website for a Serbian fund company. Trust-building design with clear service structure and professional credibility.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Finance</span></div>
+        <a class="project-link" href="https://geofund.rs" target="_blank">geofund.rs →</a>
+      </div>
+    </div>
+
+    <!-- powerhousegym.rs -->
+    <div class="project-card" data-cat="health">
+      <a class="project-preview" href="https://powerhousegym.rs" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://powerhousegym.rs" alt="powerhousegym.rs preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">Fitness / Gym</div>
+        <h3>Powerhouse Gym</h3>
+        <p class="project-desc">Gym and fitness centre website. Bold, energetic design with membership plans, schedule, trainers and full facility showcase.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Gym</span></div>
+        <a class="project-link" href="https://powerhousegym.rs" target="_blank">powerhousegym.rs →</a>
+      </div>
+    </div>
+
+    <!-- taopatch-srbija.com -->
+    <div class="project-card" data-cat="health ecommerce">
+      <a class="project-preview" href="https://taopatch-srbija.com" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://taopatch-srbija.com" alt="taopatch-srbija.com preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">Health / E-commerce</div>
+        <h3>Tao Patch Serbia</h3>
+        <p class="project-desc">Health technology e-commerce store for the Serbian market. Product education, testimonials and full online sales flow via WooCommerce.</p>
+        <div class="project-tags"><span class="tag">WooCommerce</span><span class="tag">Health Tech</span><span class="tag">E-commerce</span></div>
+        <a class="project-link" href="https://taopatch-srbija.com" target="_blank">taopatch-srbija.com →</a>
+      </div>
+    </div>
+
+    <!-- vsfitness.online -->
+    <div class="project-card" data-cat="health">
+      <a class="project-preview" href="https://vsfitness.online" target="_blank">
+        <img src="https://image.thum.io/get/width/600/https://vsfitness.online" alt="vsfitness.online preview" loading="lazy" onerror="this.style.display='none';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center';this.parentElement.style.fontSize='3rem';">
+        <div class="preview-overlay"><span>Visit site →</span></div>
+      </a>
+      <div class="project-body">
+        <div class="project-cat">Fitness / Online Coaching</div>
+        <h3>VS Fitness</h3>
+        <p class="project-desc">Online fitness coaching website. Programme showcase, trainer profile, transformation gallery and membership sign-up section.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Fitness</span><span class="tag">Online</span></div>
+        <a class="project-link" href="https://vsfitness.online" target="_blank">vsfitness.online →</a>
+      </div>
+    </div>
+
     <!-- Fleet Management App -->
     <div class="project-card" data-cat="dev">
-      <a class="project-preview" href="https://github.com/daliborbuca/fleet-management-app" target="_blank">
+      <a class="project-preview" href="https://github.com/daliborbuca/fleet-management-app" target="_blank" style="display:flex;align-items:center;justify-content:center;font-size:3rem;background:var(--surface2);">
         <span>🚗</span>
         <div class="preview-overlay"><span>View on GitHub →</span></div>
       </a>
@@ -600,6 +525,57 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal">
+    <span class="section-label">Client Reviews</span>
+    <h2 class="section-title">What Clients Say</h2>
+    <p class="section-desc">Feedback from businesses I've worked with across Serbia, Croatia and Germany.</p>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Dalibor built our gym website from scratch in record time. The result was exactly what we envisioned — bold, energetic, and easy to manage ourselves. Membership inquiries went up noticeably within the first month.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">🏋️</div>
+          <div>
+            <div class="testimonial-name">Marko V.</div>
+            <div class="testimonial-role">Owner, Powerhouse Gym</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">We needed a bilingual site for the German market — Dalibor understood the brief immediately and delivered a professional result. Communication was fast and the technical quality was clearly above what we'd seen from local agencies.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">🏗️</div>
+          <div>
+            <div class="testimonial-name">Miloš P.</div>
+            <div class="testimonial-role">Director, BMPM Bau (Germany)</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Our festival website needed to handle high traffic and look great on all devices. Dalibor nailed both. The design stood out from every other festival site we'd seen, and the build was solid throughout the entire event season.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">💃</div>
+          <div>
+            <div class="testimonial-name">Ana K.</div>
+            <div class="testimonial-role">Organiser, Šibenik Dance Festival</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -632,10 +608,10 @@
       </div>
       <div>
         <form class="contact-form" onsubmit="handleForm(event)">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Your email" required />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Tell me about your project..."></textarea>
+          <input type="text" id="f-name" placeholder="Your name" required />
+          <input type="email" id="f-email" placeholder="Your email" required />
+          <input type="text" id="f-subject" placeholder="Subject" />
+          <textarea id="f-msg" placeholder="Tell me about your project..."></textarea>
           <button type="submit" class="btn btn-primary" style="justify-content:center;">Send message →</button>
         </form>
       </div>
@@ -668,11 +644,21 @@
     });
   }
 
-  // Contact form
+  // Contact form — opens email client with pre-filled message
   function handleForm(e) {
     e.preventDefault();
+    const name = document.getElementById('f-name').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    const subject = document.getElementById('f-subject').value.trim() || 'Portfolio inquiry';
+    const msg = document.getElementById('f-msg').value.trim();
+    const body = encodeURIComponent(
+      'Name: ' + name + '\nEmail: ' + email + '\n\n' + msg
+    );
+    const mailtoLink = 'mailto:dalibor.stanojlovic@outlook.com?subject=' +
+      encodeURIComponent(subject) + '&body=' + body;
+    window.location.href = mailtoLink;
     const btn = e.target.querySelector('button');
-    btn.textContent = '✓ Message sent!';
+    btn.textContent = '✓ Opening email client...';
     btn.style.background = '#43e97b'; btn.style.color = '#000';
     setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; btn.style.color = ''; }, 3000);
   }
